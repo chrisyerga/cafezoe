@@ -1,0 +1,1 @@
+{"root":["./app.config.ts","./src/auth.ts","./src/convex.ts","./src/theme.ts","./app/_layout.tsx","./app/index.tsx","./app/pets/[petid].tsx","./app/pets/new.tsx"],"errors":true,"version":"6.0.3"}

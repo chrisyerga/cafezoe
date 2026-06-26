@@ -1,0 +1,35 @@
+{
+  "name": "@lindale/cafezoe-web",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite dev --port 3000",
+    "build": "vite build",
+    "start": "node .output/server/index.mjs",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@convex-dev/auth": "latest",
+    "@lindale/generation-cafezoe": "workspace:*",
+    "@lindale/generation-core": "workspace:*",
+    "@lindale/shared": "workspace:*",
+    "@tanstack/react-devtools": "latest",
+    "@tanstack/react-router": "latest",
+    "@tanstack/react-router-devtools": "latest",
+    "@tanstack/react-start": "latest",
+    "@tanstack/router-plugin": "latest",
+    "@vitejs/plugin-react": "latest",
+    "convex": "latest",
+    "nitro": "npm:nitro-nightly@latest",
+    "react": "latest",
+    "react-dom": "latest",
+    "vite": "latest"
+  },
+  "devDependencies": {
+    "@tanstack/router-cli": "^1.167.17",
+    "@types/react": "latest",
+    "@types/react-dom": "latest",
+    "typescript": "latest"
+  }
+}

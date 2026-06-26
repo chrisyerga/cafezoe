@@ -1,0 +1,39 @@
+{
+  "name": "cafezoe",
+  "private": true,
+  "type": "module",
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "dev:web": "pnpm --filter @lindale/cafezoe-web dev",
+    "dev:mobile": "pnpm --filter @lindale/cafezoe-mobile start",
+    "build": "pnpm --filter @lindale/cafezoe-web build",
+    "start": "pnpm --filter @lindale/cafezoe-web start",
+    "convex:dev": "convex dev",
+    "convex:deploy": "convex deploy",
+    "typecheck": "pnpm -r --if-present typecheck",
+    "lint": "eslint .",
+    "check": "pnpm typecheck && pnpm lint"
+  },
+  "dependencies": {
+    "@convex-dev/auth": "latest",
+    "@lindale/generation-cafezoe": "workspace:*",
+    "@lindale/generation-core": "workspace:*",
+    "convex": "latest"
+  },
+  "devDependencies": {
+    "@convex-dev/eslint-plugin": "latest",
+    "@eslint/js": "latest",
+    "@types/node": "latest",
+    "eslint": "latest",
+    "eslint-config-prettier": "latest",
+    "typescript": "latest",
+    "typescript-eslint": "latest"
+  },
+  "packageManager": "pnpm@10.20.0",
+  "engines": {
+    "node": ">=22.12.0"
+  }
+}

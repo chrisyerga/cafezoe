@@ -1,0 +1,16 @@
+services:
+  web:
+    image: ${WEB_IMAGE:-ghcr.io/OWNER/CAFEZOE:latest}
+    container_name: cafezoe-web
+    restart: unless-stopped
+    environment:
+      NODE_ENV: production
+      SITE_URL: ${SITE_URL}
+      VITE_CONVEX_URL: ${VITE_CONVEX_URL}
+      GIT_SHA: ${GIT_SHA:-unknown}
+    networks:
+      - edge
+
+networks:
+  edge:
+    external: true

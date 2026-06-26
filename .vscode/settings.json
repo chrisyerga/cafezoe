@@ -1,0 +1,18 @@
+{
+    "workbench.colorCustomizations": {
+      "titleBar.activeBackground": "#232379",
+      "titleBar.activeForeground": "#e4e0f0",
+      "titleBar.inactiveBackground": "#0a0a54",
+      "titleBar.inactiveForeground": "#9a92b0"
+    },
+    "files.watcherExclude": {
+      "**/routeTree.gen.ts": true
+    },
+    "search.exclude": {
+      "**/routeTree.gen.ts": true
+    },
+    "files.readonlyInclude": {
+      "**/routeTree.gen.ts": true
+    }
+  }
+  

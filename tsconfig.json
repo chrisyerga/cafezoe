@@ -1,0 +1,13 @@
+{
+  "compilerOptions": {
+    "types": ["node"]
+  },
+  "files": [],
+  "references": [
+    { "path": "./packages/generation-core" },
+    { "path": "./packages/generation-cafezoe" },
+    { "path": "./packages/shared" },
+    { "path": "./apps/web" },
+    { "path": "./apps/mobile" }
+  ]
+}

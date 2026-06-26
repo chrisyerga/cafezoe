@@ -1,0 +1,11 @@
+{
+  "extends": "../../tsconfig.base.json",
+  "compilerOptions": {
+    "rootDir": "./src",
+    "paths": {
+      "@lindale/generation-core": ["./src/index.ts"],
+      "@lindale/generation-core/*": ["./src/*"]
+    }
+  },
+  "include": ["src/**/*.ts"]
+}

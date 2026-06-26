@@ -1,0 +1,28 @@
+{
+  "compilerOptions": {
+    "target": "ES2022",
+    "module": "ESNext",
+    "moduleResolution": "bundler",
+    "lib": ["ES2022", "DOM", "DOM.Iterable"],
+    "jsx": "react-jsx",
+    "strict": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noFallthroughCasesInSwitch": true,
+    "noUncheckedSideEffectImports": true,
+    "skipLibCheck": true,
+    "ignoreDeprecations": "6.0",
+    "verbatimModuleSyntax": true,
+    "allowImportingTsExtensions": true,
+    "resolveJsonModule": true,
+    "noEmit": true,
+    "baseUrl": ".",
+    "paths": {
+      "@lindale/generation-core": ["packages/generation-core/src/index.ts"],
+      "@lindale/generation-core/*": ["packages/generation-core/src/*"],
+      "@lindale/generation-cafezoe": ["packages/generation-cafezoe/src/index.ts"],
+      "@lindale/shared": ["packages/shared/src/index.ts"],
+      "#convex/*": ["convex/*"]
+    }
+  }
+}
