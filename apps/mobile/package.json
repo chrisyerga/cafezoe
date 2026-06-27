@@ -5,9 +5,11 @@
   "type": "module",
   "main": "expo-router/entry",
   "scripts": {
-    "start": "expo start",
-    "android": "expo start --android",
-    "ios": "expo start --ios",
+    "start": "expo start --dev-client",
+    "android": "expo run:android",
+    "ios": "expo run:ios --device",
+    "ios:sim": "expo run:ios",
+    "prebuild": "expo prebuild --clean",
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {
@@ -17,6 +19,7 @@
     "@lindale/shared": "workspace:*",
     "convex": "latest",
     "expo": "56.0.12",
+    "expo-dev-client": "~56.0.20",
     "expo-router": "56.2.11",
     "expo-secure-store": "56.0.4",
     "expo-status-bar": "56.0.4",

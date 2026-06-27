@@ -8,6 +8,13 @@ export default ({ config }: ConfigContext): ExpoConfig => ({
   version: '0.0.1',
   orientation: 'portrait',
   userInterfaceStyle: 'light',
+  ios: {
+    bundleIdentifier: 'lol.cafezoe.app',
+  },
+  android: {
+    package: 'lol.cafezoe.app',
+  },
+  plugins: ['expo-router', 'expo-dev-client'],
   extra: {
     convexUrl: process.env.EXPO_PUBLIC_CONVEX_URL,
   },
