@@ -8,7 +8,7 @@
   ],
   "scripts": {
     "dev:web": "pnpm --filter @lindale/cafezoe-web dev",
-    "dev:mobile": "pnpm --filter @lindale/cafezoe-mobile start",
+    "dev:mobile": "pnpm --filter @lindale/cafezoe-mobile exec expo run:ios --device",
     "build": "pnpm --filter @lindale/cafezoe-web build",
     "start": "pnpm --filter @lindale/cafezoe-web start",
     "convex:dev": "convex dev",

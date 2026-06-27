@@ -1,3 +1,5 @@
+export { PASSWORD_MIN_LENGTH, signInWithPassword } from './auth'
+
 export type PetDraft = {
   name: string
   species?: string

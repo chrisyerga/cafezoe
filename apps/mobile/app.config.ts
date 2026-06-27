@@ -10,6 +10,7 @@ export default ({ config }: ConfigContext): ExpoConfig => ({
   userInterfaceStyle: 'light',
   ios: {
     bundleIdentifier: 'lol.cafezoe.app',
+    appleTeamId: 'WPH3363N8F',
   },
   android: {
     package: 'lol.cafezoe.app',

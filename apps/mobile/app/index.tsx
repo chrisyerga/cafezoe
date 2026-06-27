@@ -5,6 +5,7 @@ import { StatusBar } from 'expo-status-bar'
 import { useState } from 'react'
 import { Pressable, SafeAreaView, ScrollView, StyleSheet, Text, TextInput, View } from 'react-native'
 import { signInWithPassword } from '../src/auth'
+import { PASSWORD_MIN_LENGTH } from '@lindale/shared'
 import { api } from '../src/convex'
 import { colors, shadow } from '../src/theme'
 
@@ -27,7 +28,10 @@ function AuthPanel() {
     <View style={styles.panel}>
       <Text style={styles.eyebrow}>Cafe key</Text>
       <Text style={styles.title}>Sign in to CafeZoe.</Text>
-      <Text style={styles.body}>This starter uses Convex password auth. OAuth can join this same screen later.</Text>
+      <Text style={styles.body}>
+        This starter uses Convex password auth. New accounts need a password of at least {PASSWORD_MIN_LENGTH}{' '}
+        characters.
+      </Text>
       <TextInput
         value={email}
         onChangeText={setEmail}
